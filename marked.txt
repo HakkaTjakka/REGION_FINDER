@@ -1,0 +1,4 @@
+XMIN=0 XMAX=26 XTOT=27
+ZMIN=0 ZMAX=26 ZTOT=27
+r.2.2 (V)  x   x 
+r.4.4 (V)  x   x 

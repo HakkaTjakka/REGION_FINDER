@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1633374154 source:f:\region_finder\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<dirent.h>
+	<sys/stat.h>
+	<string.h>
+
+1633374154 
+
+1633475959 source:/mnt/f/REGION_FINDER/MAIN.CPP
+	<stdio.h>
+	<stdlib.h>
+	<io.h>
+	<dirent.h>
+	<sys/stat.h>
+	<string.h>
+	<vector>
+	<map>
+	<limits>
+
