@@ -27,3 +27,5 @@ You get a list with the r.x.z files marked. (And showing if there is a .mca or .
 Change for other usage.
 
 .exe compiled under Ubuntu for Windows with codeblocks and cross compiler.
+
+Use SynWrite.6.41.2780 for column based search and replace (missing in notepad++)
