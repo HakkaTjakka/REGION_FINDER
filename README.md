@@ -25,3 +25,5 @@ region_finder.exe out.txt
 You get a list with the r.x.z files marked. (And showing if there is a .mca or .vox file)
  
 Change for other usage.
+
+.exe compiled under Ubuntu for Windows with codeblocks and cross compiler.
