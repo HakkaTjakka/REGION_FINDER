@@ -71,6 +71,10 @@
 			<Add directory="lib" />
 		</Linker>
 		<Unit filename="REGION_FINDER_MAIN.CPP" />
+		<Unit filename="template.frag" />
+		<Unit filename="template.vert" />
+		<Unit filename="text.frag" />
+		<Unit filename="text.vert" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

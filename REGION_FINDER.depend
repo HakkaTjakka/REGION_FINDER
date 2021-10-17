@@ -420,10 +420,13 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1634009435 source:f:\region_finder\region_finder_main.cpp
+1634363248 source:f:\region_finder\region_finder_main.cpp
+	<conio.h>
 	<stdio.h>
 	<stdlib.h>
+	<windows.h>
 	<io.h>
+	<math.h>
 	<dirent.h>
 	<sys/stat.h>
 	<string.h>
@@ -433,6 +436,8 @@
 	<SFML\Graphics.hpp>
 	<SFML\Graphics\Shader.hpp>
 	<SFML\Graphics\Image.hpp>
+	<iostream>
+	<errno.h>
 
 1582638338 f:\region_finder\include\sfml\graphics.hpp
 	<SFML/Window.hpp>

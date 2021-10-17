@@ -94,13 +94,13 @@ void nep_main()
 */
 //vec2 iResolution=vec2(1920.0,1080.0);
 
-vec2 trans=vec2(1.0,-1.0)/iResolution;
+vec2 trans=1.0/iResolution;
 
 void main()
 {
 //    vec2 uv=vec2(0.0,1.0)+trans*(gl_FragCoord.xy-1.0);
 //    vec2 uv=vec2(0.0,1.0)+trans*(gl_FragCoord.xy-1.0);
-    vec2 uv=vec2(0.0,1.0)+trans*(gl_FragCoord.xy);
+    vec2 uv=(gl_FragCoord.xy)/iResolution;
     int r=0;
     vec4 col;
     vec4 c;
@@ -108,6 +108,7 @@ void main()
 	if (col.g>0.5 && col.r>0.5)
         for (int x=-1; x<2; x++)
             for (int y=-1; y<2; y++) {
+//                c=texture2D(texture,  uv+vec2(x,y)/iResolution);
                 c=texture2D(texture,  uv+vec2(x,y)/iResolution);
                 if ( c.g>0.5 && c.r<0.5 ) r++;
             }
