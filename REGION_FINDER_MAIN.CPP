@@ -884,12 +884,12 @@ bool TILE(  int& x2, int& z2,
 //            for (int t=0; t<100; t++) { sf::sleep(sf::seconds(0.01)); Window_IN.pollEvent(e); Window_OUT.pollEvent(e); }
 
             out.draw(sprite_out[x_c][z_c]);
-            out.display();
-            Window_OUT.draw(sprout);
-            Window_OUT.display();
 //            for (int t=0; t<100; t++) { sf::sleep(sf::seconds(0.01)); Window_IN.pollEvent(e); Window_OUT.pollEvent(e); }
         }
     }
+    out.display();
+    Window_OUT.draw(sprout);
+    Window_OUT.display();
 
     sprintf(filename_to,"%s/r.%d.%d.png",d, x2, z2);
     printf("to %s Saving...",filename_to);
