@@ -1104,7 +1104,6 @@ int main(int argc, char ** argv) {
             if (zoom_level==0) {
                 zoom_level=18;
                 ret=read_tiles(argv[2], regions_mapped, region_size);
-                exit(0);
             } else {
                 ret=read_tiles2(argv[2], regions_mapped, true);
             }
