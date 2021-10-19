@@ -1,12 +1,5 @@
 @ECHO OFF
 region_finder tiles f:/cut
-region_finder tiles 18
-region_finder tiles 17
-region_finder tiles 16
-region_finder tiles 15
-region_finder tiles 14
-region_finder tiles 13
-region_finder tiles 12
 region_finder tiles 11
 region_finder tiles 10
 region_finder tiles 9

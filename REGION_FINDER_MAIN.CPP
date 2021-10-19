@@ -960,12 +960,12 @@ bool make_new_tile( char* directory,
     if (z>=0) z100=z/10; else z100=(z+1)/10-1;
 
     char d[30];
-    if (zoom_level==18) {
+    if (zoom_level==11) {
         sprintf(d,"%d/%d", zoom_level, x100);
         if (!file_exists(d)) mkdir(d);
     }
     sprintf(d,"%d/%d/%d", zoom_level, x100, z100);
-    if (zoom_level==18) {
+    if (zoom_level==11) {
         if (!file_exists(d)) mkdir(d);
     }
 
@@ -982,7 +982,7 @@ bool make_new_tile( char* directory,
 
             it = regions_mapped.find((long long)(z_start+z_c)*1000000+(long long)(x_start+x_c));
             if (it != regions_mapped.end()) {
-                if (zoom_level==18) { // create first new copy
+                if (zoom_level==11) { // create first new copy
                     sprintf(filename_from,"%s/r.%d.%d.png", directory, x_start+x_c, z_start+z_c);
                     sprintf(filename_to,"%s/r.%d.%d.png", d, x_start+x_c, z_start+z_c);
                     printf("Copying %s to %s", filename_from, filename_to);
@@ -994,7 +994,7 @@ bool make_new_tile( char* directory,
                 }
                 it->second.done=true;
             } else {
-                if (zoom_level==18)
+                if (zoom_level==11)
                     printf("Missing %s/r.%d.%d.png\n", directory, x_start+x_c, z_start+z_c);
                 else
                     printf("Missing %s/r.%d.%d.png\n", d, x_start+x_c, z_start+z_c);
@@ -1016,7 +1016,7 @@ int make_tiles(int zoom_level, char* directory, std::map<long long int, region> 
     Window_IN.setVerticalSyncEnabled(false);
     Window_OUT.setVerticalSyncEnabled(false);
 
-//    int zoom_level=18;
+//    int zoom_level=11;
     struct region* region_pointer;
 
     std::map<long long int, region>::iterator it;
@@ -1098,11 +1098,11 @@ int main(int argc, char ** argv) {
         if (argc>1) {
             int zoom_level=0;
             sscanf(argv[2],"%d",&zoom_level);
-//            if (zoom_level==0) zoom_level=18;
+//            if (zoom_level==0) zoom_level=11;
             printf("zoom_level=%d\n",zoom_level);
             int ret;
             if (zoom_level==0) {
-                zoom_level=18;
+                zoom_level=11;
                 ret=read_tiles(argv[2], regions_mapped, region_size);
             } else {
                 ret=read_tiles2(argv[2], regions_mapped, true);
