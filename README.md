@@ -1,5 +1,9 @@
 # REGION_FINDER
 
+http://83.83.222.154/amsterdam/
+
+http://83.83.222.154/nl/
+
 C/C++ FAST REGIONS READER/CHECKER
 
 ![clipboard_small](https://github.com/HakkaTjakka/REGION_FINDER/blob/main/output.png)
