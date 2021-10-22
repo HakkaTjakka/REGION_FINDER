@@ -1,5 +1,0 @@
-name=<?php ... ?>
-id=php
-lex=HTML,HTML_
-text=
-<?php ${0} ?>
