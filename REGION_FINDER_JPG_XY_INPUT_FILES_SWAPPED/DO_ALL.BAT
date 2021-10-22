@@ -12,8 +12,8 @@ rem region_finder tiles 3
 rem region_finder tiles 2
 rem region_finder tiles 1
 
-region_finder tiles e:/pacman/paper
-region_finder tiles 18
+rem region_finder tiles e:/pacman/paper
+rem on_finder tiles 18
 region_finder tiles 17
 region_finder tiles 16
 region_finder tiles 15
