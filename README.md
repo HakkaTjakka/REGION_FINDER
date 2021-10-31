@@ -13,6 +13,9 @@ And https://github.com/HakkaTjakka/project-obj-dos-cmd-python-slave/blob/main/RE
 To find missing region files, create a list of marked spots in out.txt, create lat/lon list by inserting it in the project-obj TEST_LIST_TO_GEO.BAT script, then run it (result.txt) with the pacman.exe geo2index holland command, resulting in a object_array.res file, for loading the octants from object_array.txt. Msg me for help.
 
 
+
+![clipboard_small](https://github.com/HakkaTjakka/REGION_FINDER/blob/main/borders_fill.png)
+
 Usage:
 
 region_finder.exe path_to_region_dir
@@ -110,4 +113,5 @@ Zoomable orthographic mega renders in 3d perspective of super large minecraft 1.
 soon, just like with the tiles from this proggie.
 	
 	
+![clipboard_small](https://github.com/HakkaTjakka/REGION_FINDER/blob/main/borders.png)
 
